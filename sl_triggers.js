@@ -8,6 +8,7 @@ window.setTimeout(function(){
     my_video.addEventListener("timeupdate", function(){
     if(this.currentTime >= trigger_times*1) {
         this.pause();
+        window.postMessage(trigger_vars,*)
     }
         
 });
