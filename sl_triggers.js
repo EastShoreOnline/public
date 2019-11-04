@@ -9,6 +9,7 @@ window.setTimeout(function(){
     if(this.currentTime >= trigger_times*1) {
         this.pause();
     }
+        
 });
-    
+ console.log(window.parent.document)
 },1000);
