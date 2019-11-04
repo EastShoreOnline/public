@@ -1,5 +1,5 @@
 window.setTimeout(function(){
-    console.log(document.getElementById("triggers"));
+    console.log(document.getElementById("triggers"),window.parent.document);
     var trigger_element = document.getElementById("triggers")
     var trigger_times = trigger_element.getAttribute("data-times")
     var trigger_vars = trigger_element.getAttribute("data-vars")
@@ -11,5 +11,5 @@ window.setTimeout(function(){
     }
         
 });
- console.log(window.parent.document)
+
 },1000);
