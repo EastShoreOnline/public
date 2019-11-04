@@ -1,3 +1,3 @@
 window.setTimeout(function(){
-    alert('Hello World');
+    console.log(document.getElementById("triggers"));
 },1000);
