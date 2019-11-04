@@ -8,7 +8,7 @@ window.setTimeout(function(){
     if(this.currentTime >= trigger_times*1) {
         this.pause();
         console.log(trigger_vars)
-        window.postMessage(trigger_vars,'*')
+       parent.parent.postMessage(trigger_vars,'*')
     }
         
 });
