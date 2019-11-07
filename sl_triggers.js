@@ -32,7 +32,7 @@ window.setTimeout(function(){
             console.log(this.currentTime,trigger_times[a]*1,trigger_array[a]);
             if(this.currentTime >= trigger_times[a]*1 && trigger_array[a]==0) {
                 this.pause();
-                parent.postMessage(this_var,'*');
+                parent.postMessage(trigger_vars[a],'*');
                 trigger_array[a]=1;
             }
         }
