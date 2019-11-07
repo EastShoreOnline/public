@@ -1,6 +1,6 @@
 window.setTimeout(function(){
     var trigger_element = document.getElementById("triggers");
-    console.log(trigger_element.getAttribute("data-times");
+    console.log(trigger_element.getAttribute("data-times"));
     var trigger_times = ''+trigger_element.getAttribute("data-times").split(',');
     var trigger_vars = ''+trigger_element.getAttribute("data-vars").split(',');
     if(trigger_times!=trigger_vars){
