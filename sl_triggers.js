@@ -1,4 +1,5 @@
 window.setTimeout(function(){
+    alert('yo');
     var trigger_element = document.getElementById("triggers")
     var trigger_times = trigger_element.getAttribute("data-times")
     var trigger_vars = trigger_element.getAttribute("data-vars")
