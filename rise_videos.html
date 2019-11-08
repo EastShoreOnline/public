@@ -12,9 +12,12 @@
     <script>
         var hash = location.hash.replace('#','').split('~');
         console.log(hash);
-        document.getElementById('my_video').setAttribute('width',hash[0]);
-        document.getElementById('my_video').setAttribute('height',hash[1]);
-        document.getElementById('my_source').setAttribute('src',hash[2]);
+        var video = document.getElementById('my_video');
+        var source =  document.getElementById('my_source');
+        video.setAttribute('width',hash[0]);
+        video.setAttribute('height',hash[1]);
+        source.setAttribute('src',hash[2]);
+        video.load();
         
         
         
