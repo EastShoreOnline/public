@@ -6,12 +6,15 @@
 </head>
 
 <body>
-    <video width="320" height="240" controls>
+    <video width="320" height="240" id="my_video" controls>
           <source src="movie.mp4" type="video/mp4">
     </video>
     <script>
-        var hash = location.hash;
-        alert(hash);
+        var hash = location.hash.replace('#','').split('~');
+        document.getElementById('my_video').setAttr('width',hash[0]);
+        document.getElementById('my_video').setAttr('height',hash[1]);
+        document.getElementById('my_video').setAttr('src',hash[2]);
+        
         
         
         </script>
