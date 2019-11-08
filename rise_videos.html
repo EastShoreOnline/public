@@ -11,9 +11,9 @@
     </video>
     <script>
         var hash = location.hash.replace('#','').split('~');
-        document.getElementById('my_video').setAttr('width',hash[0]);
-        document.getElementById('my_video').setAttr('height',hash[1]);
-        document.getElementById('my_source').setAttr('src',hash[2]);
+        document.getElementById('my_video').setAttribute('width',hash[0]);
+        document.getElementById('my_video').setAttribute('height',hash[1]);
+        document.getElementById('my_source').setAttribute('src',hash[2]);
         
         
         
