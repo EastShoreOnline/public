@@ -35,6 +35,7 @@ for(var a=0; a<hash.length; a++){
         video_variables=temp[1];
     }
 }
+console.log(video_mode,video_size,video_triggers,video_variables,video_url);
 
 //split dimensions into width and height
 video_size = video_size.split('x');
