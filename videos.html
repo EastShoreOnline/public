@@ -2,23 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Rise Videos</title>
+<title>Articulate Videos</title>
 </head>
 
 <body>
     <video width="320" height="240" id="my_video" controls>
           <source id="my_source" src="movie.mp4" type="video/mp4">
     </video>
-    <script>
-        var hash = location.hash.replace('#','').split('~');
-        console.log(hash);
-        var video = document.getElementById('my_video');
-        var source =  document.getElementById('my_source');
-        video.setAttribute('width',hash[0]);
-        video.setAttribute('height',hash[1]);
-        source.setAttribute('src',hash[2]);
-        video.load();
-        </script>
+    <script src="player.js"></script>
     <script src="triggers.js"></script>
+    <script src="restricted.js"></script>
 </body>
 </html>
