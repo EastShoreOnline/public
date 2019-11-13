@@ -41,7 +41,8 @@ video_size = video_size.split('x');
 
 //load the video into the html
 var my_video = document.getElementById('my_video');
+var my_source = document.getElementById('my_source');
 my_video.setAttribute('width',video_size[0]);
 my_video.setAttribute('height',video_size[1]);
-my_video.source.setAttribute('src',video_url);
+my_source.source.setAttribute('src',video_url);
 my_video.load();
